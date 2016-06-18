@@ -70,3 +70,6 @@ theme: again
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+#single pagesingle_page:
+  - about

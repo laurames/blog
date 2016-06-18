@@ -6,7 +6,9 @@ categories:
   - featured
 tags:
   - aalto
-  - something
+  - coding
+  - video
+  - audio
 ---
 ---
 Welcome to [My Blog](http://www.lauramk.me/blog)! This is my first post and I’m quite excited. I'll be writing about my projects and everything in between. Check [my personal website](http://www.lauramk.me/home/) for more info about me. I have a github account where I’ll try to put all my code and assets that go along with my posts. You can find it here: [github](https://github.com/laurames) or and possible videos from here: [vimeo](https://vimeo.com/laurameskanen).
