@@ -137,13 +137,13 @@ function checkCookie() {
 }
 ```
 
-As you can see the cookies do exactly what their names suggest, but these would be needed in logging in and out of the application and other information when using the app. So i this project is still an ongoing one, but the javascript can be found [here](https://github.com/laurames/lend2Friend/blob/master/js/fb.js).
+As you can see the cookies do exactly what their names suggest, but these would be needed in logging in and out of the application and other information when using the app. So this project is still an ongoing one, but the javascript can be found [here](https://github.com/laurames/lend2Friend/blob/master/js/fb.js).
 
 #### Lets talk VIDEO
 
 Lets start by saying that this was the most work by far! First the filming, then the video editing, audio editing, and finally the graphics with the animations. I did the filming with my [Canon iVIS HF M31](https://www.usa.canon.com/internet/portal/us/home/support/details/camcorders/support-high-definition-camcorders/vixia-hf-m31) and [Canon EOS 500D](http://www.canon.co.uk/for_home/product_finder/cameras/digital_slr/eos_500d/) and audio recording with the [Blue Yeti microphone](http://www.bluemic.com/products/yeti/).
 
-Video editing i had done before so Premier was very familiar to me, but never the less i found this tutorial really useful:
+Video editing I had done before so Premier was very familiar to me, but never the less found this tutorial really useful:
 
 {% youtube JA3-hO2co6s %}
 
@@ -151,7 +151,7 @@ Also had to revise my knowledge of [Rolling and crawling titles](https://helpx.a
 
 #### Lets talk ANIMATION
 
-Next i did the graphics and animations using After effects and this tutorial in "[Creating shape layers from vector layers for easy animation](https://helpx.adobe.com/after-effects/how-to/create-shape-vector-layers-animation.html)" really was helpful. I used the graphic assets from here: [Bookshelf](http://www.freepik.com/free-vector/bookshelves-in-flat-design_812032.htm#term=book shelf&page=1&position=4) and [open book](http://www.freepik.com/free-vector/imagination-concept_776953.htm#term=book&page=1&position=9).
+Next was the graphics and animations using After effects and this tutorial in "[Creating shape layers from vector layers for easy animation](https://helpx.adobe.com/after-effects/how-to/create-shape-vector-layers-animation.html)" really was helpful. I used the graphic assets from here: [Bookshelf](http://www.freepik.com/free-vector/bookshelves-in-flat-design_812032.htm#term=book shelf&page=1&position=4) and [open book](http://www.freepik.com/free-vector/imagination-concept_776953.htm#term=book&page=1&position=9).
 
 #### Lets talk AUDIO
 

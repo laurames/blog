@@ -12,7 +12,7 @@ timezone: Europe/Helsinki
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.lauramk.me/blog
+url: http://www.lauramk.me
 root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -71,5 +71,12 @@ theme: again
 deploy:
   type:
 
-#single pagesingle_page:
+#single
+pagesingle_page:
   - about
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
