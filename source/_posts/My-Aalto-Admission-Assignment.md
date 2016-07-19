@@ -3,7 +3,7 @@ title: My Aalto Admission Assignment
 date: 2016-04-22 15:49:46
 description: 'Tasks that we where supplied at the second phase of the application round for Aalto masters program in New Media Design and Production in 2016. This is my account of the process and the tasks that where assigned.'
 categories:
-  - featured
+  - aalto
 tags:
   - aalto
   - coding
