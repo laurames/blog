@@ -14,12 +14,12 @@ tags:
 1. [Part one: Coding](#Part-one-coding)
 2. [The Project: Church events onto a display board](#The-Project-Church-events-onto-a-display-board)
 3. [Fetching external html data](#Fetching-external-html-data)
-  1. [Client side solution](#Client-side-solution)
-  2. [Other possible solutions](#Other-possible-solutions)
-4. [Parsing data](#Parsing-data)
-5. [Filtering data](#Filtering-data)
-6. [Refreshing the page](#Refreshing-the-page)
-7. [Conclusion & important links](#Conclusion-and-Important-links)
+4. [Client side solution](#Client-side-solution)
+  1. [Parsing data](#Parsing-data)
+  2. [Filtering data](#Filtering-data)
+  3. [Refreshing the page](#Refreshing-the-page)
+5. [Other possible solutions](#Other-possible-solutions)
+6. [Conclusion & important links](#Conclusion-and-Important-links)
 
 # Part one: Coding
 
@@ -47,7 +47,7 @@ I have to be honest i was quite naive in the beginning thinking that i could jus
 
 I thought about a lot of writing my own back-end script for fetching data from the external [church site](http://www.karkkilanseurakunta.fi/tapahtumat) using php or python, but this became a very complicated way of doing things when i found out about [Yahoo's YQL service](https://developer.yahoo.com/yql/guide/). Also by reading more about cross domain requests and searched hits on stackoverflow i found answers to questions like ['Can Javascript read the source of any web page?'](http://stackoverflow.com/questions/680562/can-javascript-read-the-source-of-any-web-page) and [Loading cross domain html page with AJAX](http://stackoverflow.com/questions/15005500/loading-cross-domain-html-page-with-ajax). Here I came to decide to use YQL.
 
-### Client side solution
+## Client side solution
 
 I haven't done much SQL so YQL was just as new to me, but the query language is apparently very close to SQL. I went on to reading the documentation, but i also found a former employee of Yahoo's (Christian Heilmann) blog post on the subject [here](https://www.christianheilmann.com/2010/01/10/loading-external-content-with-ajax-using-jquery-and-yql/).
 
@@ -90,23 +90,7 @@ function weekForQuery(today, dayOfTheWeek, day, month, year){
 }
 ```
 
-### Other possible solutions
-
-As explained in the [answer](http://stackoverflow.com/questions/15005500/loading-cross-domain-html-page-with-ajax) on stockoverflow.
-
-> There are some ways to overcome the cross-domain barrier:
-> [CORS Proxy Alternatives](http://alternativeto.net/software/cors-proxy/)
-> [Ways to circumvent the same-origin policy](http://stackoverflow.com/questions/3076414/ways-to-circumvent-the-same-origin-policy)
-> [Breaking The Cross Domain Barrier](http://www.slideshare.net/SlexAxton/breaking-the-cross-domain-barrier)
-> There are some plugins that help with cross-domain requests:
-> [Cross Domain AJAX Request with YQL and jQuery](http://code.tutsplus.com/tutorials/quick-tip-cross-domain-ajax-request-with-yql-and-jquery--net-10225)
-> [Cross-domain requests with jQuery.ajax](http://james.padolsey.com/javascript/cross-domain-requests-with-jquery/)
-
-He wonderfully noted also the bast hand duty way of doing things:
-
-> The best way to overcome this problem, is by creating your own proxy in the back-end, so that your proxy will point to the services in other domains, because in the back-end not exists the same origin policy restriction.
-
-## Parsing data
+### Parsing data
 
 I knew that the only div's i needed where the one's with class name **event-list-wrapper** that contained within it **event-item-list** and in that there was the classes for **event-date**, **event-time** and **event-location**.
 
@@ -154,7 +138,7 @@ function doAjax(requestQuery){
 }
 ```
 
-## Filtering data
+### Filtering data
 
 Lastly I filter the JSON string as required:
 ``` javaScript
@@ -170,7 +154,7 @@ function filterData(data){
 }
 ```
 
-## Refreshing the page
+### Refreshing the page
 
 The page has to be kept up-to date with the latest event news, but it doesn't require refreshing more then once or twice a day. So at first thought about using a javascript for this to calculate the amount of time a page has been inactive and then just reload it, but then found out that there is a very nice meta-tag for this too! Here is the [page](http://stackoverflow.com/questions/4644027/how-to-automatically-reload-a-page-after-a-given-period-of-inactivity) where i found out about this.
 
@@ -178,6 +162,22 @@ The page has to be kept up-to date with the latest event news, but it doesn't re
 <meta http-equiv="refresh" content="5" >
 //where content ="5" are the seconds that the page will wait until refreshed
 ```
+
+## Other possible solutions
+
+As explained in the [answer](http://stackoverflow.com/questions/15005500/loading-cross-domain-html-page-with-ajax) on stockoverflow.
+
+> There are some ways to overcome the cross-domain barrier:
+> [CORS Proxy Alternatives](http://alternativeto.net/software/cors-proxy/)
+> [Ways to circumvent the same-origin policy](http://stackoverflow.com/questions/3076414/ways-to-circumvent-the-same-origin-policy)
+> [Breaking The Cross Domain Barrier](http://www.slideshare.net/SlexAxton/breaking-the-cross-domain-barrier)
+> There are some plugins that help with cross-domain requests:
+> [Cross Domain AJAX Request with YQL and jQuery](http://code.tutsplus.com/tutorials/quick-tip-cross-domain-ajax-request-with-yql-and-jquery--net-10225)
+> [Cross-domain requests with jQuery.ajax](http://james.padolsey.com/javascript/cross-domain-requests-with-jquery/)
+
+He wonderfully noted also the bast hand duty way of doing things:
+
+> The best way to overcome this problem, is by creating your own proxy in the back-end, so that your proxy will point to the services in other domains, because in the back-end not exists the same origin policy restriction.
 
 ## Conclusion and Important links
 
