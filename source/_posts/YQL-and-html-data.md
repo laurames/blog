@@ -3,7 +3,7 @@ title: YQL and Html data
 date: 2016-07-15 13:11:08
 description: "This is a project for a local church organization for fetching their event data onto a big display monitor. We are using yahoo's YQL queries to get xml data that is then converted into a JSON array string. This is an app that runs on the browser."
 categories:
-  - featured
+  - clients
 tags:
   - YQL
   - Html

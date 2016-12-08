@@ -3,7 +3,7 @@ title: Pure data course
 date: 2016-09-17 18:28:13
 description: 'This is a project to produce music by using the wikipedia live edit stream at: stream.wikimedia.org. To access the stream Socket.IO 0.9 protocol is used by installing it with npm. For the music I am using Matt Davey pure data abstractions and creating different sounds depending on the first ascii character of "title" received from the real-time Wikipedia edits stream.'
 categories:
-  - aalto
+  - featured
 tags:
   - aalto
   - wikipedia
